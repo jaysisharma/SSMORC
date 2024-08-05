@@ -130,22 +130,139 @@
                 font-size: 1.125rem;
             }
         }
+        /* Navbar Styling */
+        nav {
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            /* background-color: #333; */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo img {
+            height: 60px;
+        }
+
+        nav .menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        nav .active {
+            background-color: #fff;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .show {
+            display: flex;
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                justify-content: space-between;
+                background-color: #333;
+            }
+
+            nav .menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 10px 0;
+            }
+
+            nav .menu.show {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+                margin-right: 20px;
+            }
+
+            .menu li {
+                margin: 0;
+                padding: 10px 20px;
+                border-bottom: 1px solid #444;
+            }
+
+            .menu li:last-child {
+                border-bottom: none;
+            }
+            .pp{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
     </style>
 </head>
 
 <body class="bg-black text-white overflow-x-hidden">
     <header class="text-center">
-        <nav class="flex items-center justify-between max-w-[1650px] mx-auto p-5">
+        <nav>
             <div class="text-2xl font-bold logo">
                 <img src="./assets/logo.png" alt="Logo">
             </div>
-            <ul class="flex gap-4 list-none m-0 p-0">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu">
                 <li><a href="./index.html" class="hover:text-gray-400 transition">Home</a></li>
                 <li><a href="./ourstory.html" class="hover:text-gray-400 transition">Our Story</a></li>
+                <li><a href="./message.html" class="hover:text-gray-400 transition">President Message</a></li>
                 <li><a href="./OurTeam.html" class="hover:text-gray-400 transition">Our Team</a></li>
                 <li><a href="./contact.html" class="hover:text-gray-400 transition">Contact</a></li>
-                <li><a href="#portal" class="px-5 py-2.5 rounded-lg bg-white text-black text-lg font-bold">Portal</a>
-                </li>
+                <li><a href="#portal" class="px-5 py-2.5 rounded-lg bg-white text-black text-lg font-bold">Portal</a></li>
             </ul>
         </nav>
     </header>
@@ -200,6 +317,12 @@
             <p class="text-base">&copy; 2024 Suryagadhi Sahid Memorial Observatory. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
 
 </html>

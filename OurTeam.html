@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Suryagadhi Sahid Memorial Observatory</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.1/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Karla", sans-serif;
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 1.5rem;
+        }
+
+        .team-container {
+            background: #222;
+            padding: 4rem 1rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .team-card {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 1rem;
+        }
+
+        .team-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .team-card .info {
+            color: #fff;
+            text-align: center;
+        }
+
+        .team-card .info h3 {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+        }
+
+        .team-card .info p {
+            font-size: 0.875rem;
+            color: #bbb;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            margin-top: 2%;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .logo img {
+            height: 70px;
+            width: 100px;
+        }
+
+        @media (min-width: 640px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .team-card .info h3 {
+                font-size: 1.5rem;
+            }
+
+            .team-card .info p {
+                font-size: 1rem;
+            }
+
+        }
+
+        @media (max-width: 640px) {
+            .team-grid {
+                display: grid;
+                grid-template-columns: repeat(1, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .section-title {
+                font-size: 3rem;
+            }
+
+            .team-card .info h3 {
+                font-size: 1.75rem;
+            }
+
+            .team-card .info p {
+                font-size: 1.125rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+    <header class="text-center">
+        <nav class="flex items-center justify-between max-w-[1650px] mx-auto p-5">
+            <div class="text-2xl font-bold logo">
+                <img src="./assets/logo.png" alt="Logo">
+            </div>
+            <ul class="flex gap-4 list-none m-0 p-0">
+                <li><a href="./index.html" class="hover:text-gray-400 transition">Home</a></li>
+                <li><a href="./ourstory.html" class="hover:text-gray-400 transition">Our Story</a></li>
+                <li><a href="#services" class="hover:text-gray-400 transition">Services</a></li>
+                <li><a href="./contact.html" class="hover:text-gray-400 transition">Contact</a></li>
+                <li><a href="#portal" class="px-5 py-2.5 rounded-lg bg-white text-black text-lg font-bold">Portal</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="text-center py-10 px-5 bg-black">
+        <h2 class="section-title">Meet Our Team</h2>
+        <p class="text-lg">Get to know the talented individuals who drive our mission and vision forward.</p>
+    </section>
+
+    <section class="team-container max-w-[1650px] mx-auto">
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="./assets/swaraj.jpeg" alt="Swaraj Sagar Pradhan">
+                <div class="info">
+                    <h3>Swaraj Sagar Pradhan</h3>
+                    <p>President, SSMORC</p>
+                    <p>Leading our efforts in astronomical research and education, ensuring we stay at the forefront of
+                        discovery and innovation.</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="./assets/abhis.png" alt="Abhishek Shah">
+                <div class="info">
+                    <h3>Abhishek Shah</h3>
+                    <p>Director, SSMORC</p>
+                    <p>Driving our research initiatives and collaborating with global scientists to unlock the mysteries
+                        of the cosmos.</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="./assets/w.png" alt="John Doe">
+                <div class="info">
+                    <h3>John Doe</h3>
+                    <p>Education Coordinator</p>
+                    <p>Developing educational programs and public outreach activities to engage and inspire future
+                        generations.</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="./assets/IMG_20240804_181011.jpg" alt="Jane Smith">
+                <div class="info">
+                    <h3>Jane Smith</h3>
+                    <p>Technical Specialist</p>
+                    <p>Managing our observatory's technical systems and ensuring our equipment operates at peak
+                        efficiency.</p>
+                </div>
+            </div>
+            <!-- Add more team members as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="text-center mt-10 border-t border-gray-700 pt-6">
+            <p class="text-base">&copy; 2024 Suryagadhi Sahid Memorial Observatory. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

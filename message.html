@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Suryagadhi Sahid Memorial Observatory</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.1/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Karla', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: url('./assets/header-background.jpg') no-repeat center center/cover;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .content h2 {
+            font-size: 2.75rem;
+            margin-bottom: 20px;
+            color: #f0f0f0;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #d0d0d0;
+        }
+
+        .message-section {
+            margin-bottom: 60px;
+        }
+
+        .message-photo {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .message-photo img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .message-photo div {
+            max-width: 650px;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+            background-color: #1e1e1e;
+        }
+
+        footer p {
+            margin: 0;
+            color: #999;
+        }
+
+        /* Navbar Styling */
+        nav {
+            /* background-color: #333; */
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        nav .logo img {
+            height: 60px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        nav .active {
+            background-color: #fff;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                padding: 10px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between max-w-[1650px] mx-auto p-5 relative z-10">
+        <div class="text-2xl font-bold logo">
+            <img src="./assets/logo.png" alt="">
+        </div>
+        <ul class="flex gap-4 list-none m-0 p-0">
+            <li><a href="#home" class="hover:text-gray-400 transition">Home</a></li>
+            <li><a href="./ourstory.html" class="hover:text-gray-400 transition">Our Story</a></li>
+            <li><a href="./message.html" class="hover:text-gray-400 transition">President Message</a></li>
+
+            <li><a href="./OurTeam.html" class="hover:text-gray-400 transition">Our Team</a></li>
+            <li><a href="./contact.html" class="hover:text-gray-400 transition">Contact</a></li>
+            <li><a href="#portal" class="px-5 py-2.5 rounded-lg bg-white text-black text-lg font-bold">Portal</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Messages from Our Leadership</h1>
+        <p>Suryagadhi Sahid Memorial Observatory</p>
+    </header>
+
+    <section class="content">
+        <!-- President's Message -->
+        <div class="message-section">
+            <h2>Message from Our President</h2>
+            <div class="message-photo">
+                <img src="./assets/swaraj.jpeg" alt="President Swaraj Sagar Pradhan">
+                <div>
+                    <p>Dear Friends and Colleagues,</p>
+                    <p>As President of the Suryagadhi Sahid Memorial Observatory and Research Center, I am excited to introduce our groundbreaking project in Nepal. Our observatory, featuring a 1.5-meter telescope and advanced technology, will be a beacon for scientific research and education.</p>
+                    <p>We aim to create a global hub for astronomical research and collaboration, inviting scholars and enthusiasts from around the world. Set in the Himalayas, our facility will offer pristine views of the cosmos and contribute to international scientific efforts.</p>
+                    <p>This observatory honors Nepal's heritage and heroes, combining science with history and education with tourism. We envision a future where curiosity and innovation thrive, inspiring visitors and fostering a sense of wonder about the universe.</p>
+                    <p>Scheduled to open by 2028, this project represents a shared vision of progress and unity. Join us in building a center of knowledge and exploration that will shine for generations.</p>
+                    <p>Sincerely,</p>
+                    <p>Swaraj Sagar Pradhan<br>
+                        President<br>
+                        Suryagadhi Sahid Memorial Observatory and Research Center (SSMORC)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Director's Message -->
+        <div class="message-section">
+            <h2>Message from Our Director</h2>
+            <div class="message-photo">
+                <img src="./assets/abhis.png" alt="Director Abhishek Shah">
+                <div>
+                    <p>Welcome to the Suryagadhi Sahid Memorial Observatory and Research Center.</p>
+                    <p>As the Director, I, Abhishek Shah, am privileged to spearhead our pursuit of astronomical discovery and education. Our mission is to foster a deep sense of wonder and understanding of the cosmos.</p>
+                    <p>Our center is dedicated to pioneering research and delivering innovative educational programs. We strive to make the mysteries of the universe accessible to all, through state-of-the-art facilities and expert-led initiatives. We invite you to engage with us at our events, planetarium shows, and academic programs as we delve into the exploration of the stars.</p>
+                    <p>Thank you for joining us on this remarkable journey.</p>
+                    <p>Long way to go</p>
+                    <p>Sincerely,</p>
+                    <p>Abhishek Shah<br>
+                        Director<br>
+                        Suryagadhi Sahid Memorial Observatory and Research Center</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Suryagadhi Sahid Memorial Observatory. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
